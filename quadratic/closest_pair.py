@@ -14,5 +14,5 @@ def find_closest_pair(points):
     return closest_pair
 
 
-inputs = [(10,10), (100,120), (50, 21), (100, 10), (60, 35), (65, 36)]
+inputs = [(10, 10), (100, 120), (50, 21), (100, 10), (60, 35), (65, 36)]
 print(find_closest_pair(inputs))
