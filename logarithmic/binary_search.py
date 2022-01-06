@@ -12,5 +12,5 @@ def binary_search(items, x):
     return -1
 
 
-arr = ["Bob", "Isabel", "James", "Pam", "Peter", "Ruth", "Sam", "Vera"]
-print(binary_search(arr, "Vera"))
+names = ["Bob", "Isabel", "James", "Pam", "Peter", "Ruth", "Sam", "Vera"]
+print(binary_search(names, "James"))
