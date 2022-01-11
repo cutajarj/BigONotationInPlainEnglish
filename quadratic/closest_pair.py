@@ -1,6 +1,8 @@
 import math
 from math import dist
 
+from quadratic.Point2D import Point2D
+
 
 def find_closest_pair(points):
     minimum_dist = math.inf
@@ -14,5 +16,5 @@ def find_closest_pair(points):
     return closest_pair
 
 
-inputs = [(10, 10), (100, 120), (50, 21), (100, 10), (60, 35), (65, 36)]
+inputs = [Point2D(10, 10), Point2D(100, 120), Point2D(50, 21), Point2D(100, 10), Point2D(60, 35), Point2D(65, 36)]
 print(find_closest_pair(inputs))
