@@ -7,7 +7,6 @@ def str_equal(str_a, str_b):
     return True
 
 
-print(str_equal("Isabel", "James"))
+print(str_equal("Pam", "Jennifer"))
 print(str_equal("Isabel", "Isador"))
-print(str_equal("Isabel", "Isabel"))
-
+print(str_equal("Peter", "Peter"))
