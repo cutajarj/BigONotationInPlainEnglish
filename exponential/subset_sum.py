@@ -13,5 +13,6 @@ def subset_sum(s, target):
     return False
 
 
-print(subset_sum([2, 3, 5, 7, 11, 15], 14))
-# print(subset_sum([2, 3, 5, 7, 11, 15], 6))
+# print(subset_sum([2, 3, 5, 7, 11, 15], 14))
+print(subset_sum([2, 3, 5, 7, 11, 15], 6))
+# print(subset_sum([2, 3, 5, 7, 11, 15], 0))
