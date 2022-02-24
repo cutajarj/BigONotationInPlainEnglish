@@ -8,9 +8,9 @@ def find_closest_pair(points):
     minimum_dist = math.inf
     closest_pair = (None, None)
     for i in range(len(points)):
-        for j in range(len(points)):
+        for j in range(i + 1, len(points)):
             distance = dist(points[i], points[j])
-            if distance < minimum_dist and i != j:
+            if distance < minimum_dist:
                 minimum_dist = distance
                 closest_pair = (points[i], points[j])
     return closest_pair
