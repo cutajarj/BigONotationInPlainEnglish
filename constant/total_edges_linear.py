@@ -2,7 +2,7 @@
 def number_of_edges(nodes):
     result = 0
     for i in range(nodes):
-        result += nodes - 1 - i
+        result += nodes - (i + 1)
     return result
 
 
