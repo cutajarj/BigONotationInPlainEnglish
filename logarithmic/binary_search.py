@@ -1,7 +1,7 @@
 def binary_search(items, x):
     start = 0
     end = len(items) - 1
-    while start <= end:
+    while start <= end: # start > end -- Stopping condition
         mid = (start + end) // 2
         if x > items[mid]:
             start = mid + 1
