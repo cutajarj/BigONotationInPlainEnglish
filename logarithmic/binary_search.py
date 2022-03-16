@@ -12,5 +12,8 @@ def binary_search(items, x):
     return -1
 
 
-names = ["Bob", "Isabel", "James", "Pam", "Peter", "Ruth", "Sam", "Vera"]
+names = ["Bob", "Isabel", "James", "Pam", "Peter", "Rose", "Sam", "Vera", "Zoe"]
+print(binary_search(names, "Rose"))
 print(binary_search(names, "James"))
+print(binary_search(names, "Bob"))
+print(binary_search(names, "Ruth"))
