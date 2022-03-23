@@ -1,8 +1,6 @@
 from itertools import takewhile
 from math import dist
 
-from quadratic.Point2D import Point2D
-
 
 def find_closest_pair(points):
     sorted_by_x = sorted(points, key=lambda p: p.x)
@@ -33,6 +31,3 @@ def find_closest_pair_rec(points_by_x, points_by_y):
     return delta_pair
 
 
-inputs = [Point2D(10, 10), Point2D(100, 120), Point2D(50, 21), Point2D(100, 10), Point2D(100, 13), Point2D(60, 35),
-          Point2D(65, 36)]
-print(find_closest_pair(inputs))
