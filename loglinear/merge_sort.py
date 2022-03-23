@@ -1,25 +1,31 @@
+import math
+
+
+def merge(items, left, right):
+    l, r = 0, 0
+    for _ in items:
+        value_l = left[l] if l < len(left) else math.inf
+        value_r = right[r] if r < len(right) else math.inf
+        items[l + r] = min(value_l, value_r)
+        if value_l < value_r:
+            l += 1
+        else:
+            r += 1
+    return items
+
+
 def merge_sort(items):
-    if len(items) == 1:
+    if len(items) <= 1:
         return items
     mid = len(items) // 2
     left = merge_sort(items[:mid])
     right = merge_sort(items[mid:])
-    l, r = 0, 0
-    while l < len(left) and r < len(right):
-        items[l + r] = min(left[l], right[r])
-        if left[l] < right[r]:
-            l += 1
-        else:
-            r += 1
-    while l < len(left):
-        items[l + r] = left[l]
-        l += 1
-    while r < len(right):
-        items[l + r] = right[r]
-        r += 1
-    return items
+    return merge(items, left, right)
 
 
+numbers = [5, 1, 3, 2, 4, 9, 6, 7, 8]
+merge_sort(numbers)
+print(numbers)
 numbers = [9, 8, 7, 6, 5, 4, 3, 2, 1]
 merge_sort(numbers)
 print(numbers)
