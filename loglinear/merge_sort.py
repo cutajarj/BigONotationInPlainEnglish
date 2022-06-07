@@ -3,10 +3,10 @@ import math
 
 def merge(items, left, right):
     l, r = 0, 0
-    for _ in items:
+    for i in range(len(items)):
         value_l = left[l] if l < len(left) else math.inf
         value_r = right[r] if r < len(right) else math.inf
-        items[l + r] = min(value_l, value_r)
+        items[i] = min(value_l, value_r)
         if value_l < value_r:
             l += 1
         else:
